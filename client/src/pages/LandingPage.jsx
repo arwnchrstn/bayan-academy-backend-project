@@ -17,7 +17,9 @@ const LandingPage = () => {
     setLoading(true);
     (async () => {
       try {
-        const response = await axios.get("/listing");
+        const response = await axios.get(
+          process.env.REACT_APP_API_SERVER + "/listing"
+        );
         const data = await response.data;
 
         setListings((prev) => [...prev, ...data]);
