@@ -5,7 +5,7 @@
 ### This project was built using MERN Stack
 
 ### (The project is meant to be deployed in a local environment, I made a live version for demo purposes only)
-- Source code for local environment: https://drive.google.com/file/d/1FT3UEXeHD_YN5PUK6OcTBd3NJEDwSAHc/view?usp=sharing
+- Source code for local environment (Instructions included): https://drive.google.com/file/d/1FT3UEXeHD_YN5PUK6OcTBd3NJEDwSAHc/view?usp=sharing
 
 ## Features
 
