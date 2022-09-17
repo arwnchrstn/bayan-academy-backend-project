@@ -36,7 +36,7 @@ const MyListings = () => {
     try {
       setLoadingLocation(true);
       const response = await axios.get(
-        `https://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITION_STACK_ACCESS_KEY}&query=${listingState.location.place}`
+        `http://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITION_STACK_ACCESS_KEY}&query=${listingState.location.place}`
       );
       const data = await response.data.data[0];
 
