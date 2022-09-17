@@ -36,13 +36,14 @@ const MyListings = () => {
     try {
       setLoadingLocation(true);
       const response = await axios.get(
-        `http://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITION_STACK_ACCESS_KEY}&query=${listingState.location.place}`
+        `https://api.positionstack.com/v1/forward?access_key=${process.env.REACT_APP_POSITION_STACK_ACCESS_KEY}&query=${listingState.location.place}`
       );
       const data = await response.data.data[0];
 
       dispatch({ type: "update-location-latitude", payload: data.latitude });
       dispatch({ type: "update-location-longitude", payload: data.longitude });
     } catch (error) {
+      console.log(error);
       console.error(
         error.response.data.error.code +
           " - " +
